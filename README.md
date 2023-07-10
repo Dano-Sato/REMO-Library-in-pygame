@@ -1,15 +1,27 @@
-REMO Library in Pygame is useful wrapper of the pygame library.
-
+---
+### REMO Library in Pygame 
+REMO Library is useful wrapper of the pygame library.
 The Library is presented by Dano Sato in RealMono Inc.
 
+---
+### Features
 
+It supports scene control, and useful 2D graphic objects in pygame.
 
-It supports scene control, and useful objects in pygame.
+It supports image, text, sprite, grid, layout, button, slider objects
 
-It supports image, text, sprite, grid, layout, button, slider objects and fast,efficient graphic drawing function
+```python
+Obj.me = imageObj("test_me.png",pos=(50,50))
+self.indicator = textObj("Don't Eat Me!")
+```
 
 It supports user I/O and smart path finding
 
+```python
+Rs.userJustPressed(pygame.K_z)
+Rs.userJustLeftClicked()
+Rs.userPressing(pygame.K_UP)
+```
 
 
 It is an efficient 2D Game Library. 3D calculation is not supported.
