@@ -16,7 +16,7 @@ class mainScene(Scene):
         p -= RPoint(15,15) ## it supports arithmetic operations
         p *= 2        
         print(p)
-        self.mouse_pos = textObj(str(Rs.mousePos()),font = "BMJUA_ttf.ttf",color=Cs.yellow,angle=10,size=20) ## textObj : object that represents text in the game
+        self.mouse_pos = textObj(str(Rs.mousePos()),font = "BMJUA_ttf.ttf",color=Cs.yellow,angle=10,size=20,pos=RPoint(50,50)) ## textObj : object that represents text in the game
         ## you can set its (font)color, (font)size, angle(0~360),pos(position)
 
         return
