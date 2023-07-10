@@ -19,15 +19,24 @@ class mainScene(Scene):
         ## When you load file in REMO Library, you can just type it's name. you don't have to specify it's folder. 
         ## for example, "test_me.png" file is in "Resources/examples" directory. the Library would automatically find it.
         ## for who wants the algorithm, watch _buildPath function in REMOLib.py
-        ## if you make different file that has same name and extension, and in different directories, it would cause conflicts.
+        ## if you make different file that has same name and extension, and in different directories, it would cause file conflicts. (* the conflicts would be mentioned in your terminal)
         ## in that case you must specify it's detailed path like "Resources/Examples/test.png". I'd recommend not to use the same name for your game assets.
         ###
 
-        Obj.prey = imageObj("test_prey.png",pos=(300,300))
+        Obj.prey = imageObj("test_prey.png",pos=(300,300),scale=0.3)
+        self.indicator = textObj("Don't Eat ME!")
+        self.indicator.setParent(Obj.prey)
+        self.indicator.pos =RPoint(0,-30)
         self.score = textObj("SCORE:0",(200,50))
         return
     def init(self):
         return
+    
+    def setScore(self,s):
+        self.score.text = "SCORE:{0}".format(str(s))
+
+    def getScore(self):
+        return int(self.score.text.split(":")[-1])
 
     def update(self):
         if Rs.userPressing(pygame.K_UP): ## if user is pressing up key in the keyboard
@@ -44,12 +53,23 @@ class mainScene(Scene):
             Obj.me.pos+=RPoint(Obj.speed,0)
             Obj.me.angle=90
 
-        #update childs
-        #if child has update method, it updates child
+        ## you eat prey
+        if Obj.me.center.distance(Obj.prey.center) < 55:
+            self.setScore(self.getScore()+10)
+            r1 = random.randint(100,700)
+
+            r2 = random.randint(100,500)
+            Obj.prey.center = (r1,r2)
+
+
+        if Rs.userJustLeftClicked():
+            print(Rs.mousePos())
+
         return
     def draw(self):
         #draw childs
         Rs.fillScreen(Cs.black)
+        Obj.prey.draw()
         Obj.me.draw()
         self.score.draw()
         return
