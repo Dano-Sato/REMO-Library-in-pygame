@@ -19,6 +19,8 @@ class mainScene(Scene):
         ## When you load file in REMO Library, you can just type it's name. you don't have to specify it's folder. 
         ## for example, "test_me.png" file is in "Resources/examples" directory. the Library would automatically find it.
         ## for who wants the algorithm, watch _buildPath function in REMOLib.py
+        ## if you make different file that has same name and extension, and in different directories, it would cause conflicts.
+        ## in that case you must specify it's detailed path like "Resources/Examples/test.png". I'd recommend not to use the same name for your game assets.
         ###
 
         Obj.prey = imageObj("test_prey.png",pos=(300,300))
