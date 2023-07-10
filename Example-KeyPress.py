@@ -18,7 +18,7 @@ class mainScene(Scene):
         ###
         ## When you load file in REMO Library, you can just type it's name. you don't have to specify it's folder. 
         ## for example, "test_me.png" file is in "Resources/examples" directory. the Library would automatically find it.
-        ## for finding the algorithm, watch _buildPath function in REMOLib.py
+        ## for who wants the algorithm, watch _buildPath function in REMOLib.py
         ###
 
         Obj.prey = imageObj("test_prey.png",pos=(300,300))
@@ -28,8 +28,8 @@ class mainScene(Scene):
         return
 
     def update(self):
-        if Rs.userPressing(pygame.K_UP):
-            Obj.me.pos+=RPoint(0,-Obj.speed)
+        if Rs.userPressing(pygame.K_UP): ## if user is pressing up key in the keyboard
+            Obj.me.pos+=RPoint(0,-Obj.speed) ## me object will move upward
             Obj.me.angle=180
         elif Rs.userPressing(pygame.K_DOWN):
             Obj.me.pos+=RPoint(0,Obj.speed)
