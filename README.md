@@ -140,6 +140,9 @@ if __name__=="__main__":
     # Done! Time to quit.
 ```
 
+If you execute the code with resources included, result is this;
+![](https://github.com/Dano-Sato/REMO-Library-in-pygame/example_game.gif)
+
 
 ---
 ### License
