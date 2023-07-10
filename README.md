@@ -1,5 +1,7 @@
 REMO Library in Pygame is useful wrapper of the pygame library.
 
+The Library is presented by Dano Sato in RealMono Inc.
+
 
 
 It supports scene control, and useful objects in pygame.
