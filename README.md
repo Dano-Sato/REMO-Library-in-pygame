@@ -141,7 +141,7 @@ if __name__=="__main__":
 ```
 
 If you execute the code with resources included, result is this;
-![](https://github.com/Dano-Sato/REMO-Library-in-pygame/example_game.gif)
+![](https://github.com/Dano-Sato/REMO-Library-in-pygame/blob/main/example_game.gif)
 
 
 ---
