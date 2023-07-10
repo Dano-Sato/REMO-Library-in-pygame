@@ -46,6 +46,6 @@ Example files included, will be updated soon.
 ---
 ### License
 
-REMO Library is under MIT License.
+REMO Library is under MIT License. For detail, watch license.txt file.
 
-pygame is under LGPL License.
+pygame is under LGPL License. The library doesn't change pygame code.
