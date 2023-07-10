@@ -11,8 +11,11 @@ You can download REMOLib.py in this repo and include the functions by adding thi
 from REMOLib import *
 ```
 
+Or cloning this repo might be help;
 
-
+```
+git clone https://github.com/Dano-Sato/REMO-Library-in-pygame
+```
 
 ---
 ### Features
