@@ -14,8 +14,13 @@ class Obj:
 class mainScene(Scene):
     def initOnce(self):
         Obj.me = imageObj("test_me.png",pos=(50,50)) 
-        ## When you load file in REMO Library, you can just type it's name. you don't have to specify it's folder. the Library would automatically find it.
+
+        ###
+        ## When you load file in REMO Library, you can just type it's name. you don't have to specify it's folder. 
+        ## for example, "test_me.png" file is in "Resources/examples" directory. the Library would automatically find it.
         ## for finding the algorithm, watch _buildPath function in REMOLib.py
+        ###
+
         Obj.prey = imageObj("test_prey.png",pos=(300,300))
         self.score = textObj("SCORE:0",(200,50))
         return

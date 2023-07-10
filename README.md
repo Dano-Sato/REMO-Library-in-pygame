@@ -1,5 +1,7 @@
 REMO Library in Pygame is useful wrapper of the pygame library.
 It supports scene control, and useful objects in pygame.
+It supports image, text, sprite, grid, layout, button objects and fast,efficient graphic drawing function
+
 ex) imageObj, spriteObj, textObj, textButton, imageButton ...
 
 It is an efficient 2D Game Library. 3D calculation is not supported.
