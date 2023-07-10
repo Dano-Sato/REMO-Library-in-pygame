@@ -28,6 +28,9 @@ It is an efficient 2D Game Library. 3D calculation is not supported.
 
 Example files included, will be updated soon.
 
+---
+### License
+
 REMO Library is under MIT License.
 
 pygame is under LGPL License.
