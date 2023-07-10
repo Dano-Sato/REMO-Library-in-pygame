@@ -1,6 +1,6 @@
 ---
 ### REMO Library in Pygame 
-REMO Library is useful wrapper of the pygame library.
+REMO Library is useful wrapper of the pygame library that would make your game-making easier.
 The Library is presented by Dano Sato in RealMono Inc.
 
 REMO is an abbreviation of RealMono, so it means RealMono Library.
