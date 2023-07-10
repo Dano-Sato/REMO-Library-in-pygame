@@ -5,7 +5,7 @@ The Library is presented by Dano Sato in RealMono Inc.
 
 REMO is an abbreviation of RealMono, so it means RealMono Library.
 
-You can download REMOLib.py in this repo and include the functions by adding this one line in your code;
+You can download REMOLib.py in this repo and include the functions by adding this one line in your python code;
 
 ```python
 from REMOLib import *
