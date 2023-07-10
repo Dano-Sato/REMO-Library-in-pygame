@@ -10,6 +10,19 @@ REMO is an abbreviation of RealMono, so it means RealMono Library.
 
 It supports scene control, and useful 2D graphic objects in pygame.
 
+```python
+class mainScene(Scene):
+    def initOnce(self):
+        ###Fill in the functions
+        return
+    def init(self):
+        return
+    def update(self):
+        return
+    def draw(self):
+        return
+```
+
 It supports image, text, sprite, grid, layout, button, slider objects
 
 ```python
