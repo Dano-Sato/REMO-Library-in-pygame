@@ -1,7 +1,7 @@
 from REMOLib import *
 
 
-#게임 오브젝트들을 선언하는 곳입니다.
+#Global Game Objects 
 class Obj:
     obj = imageObj.__new__(imageObj)
     obj2 = Rs.new(imageObj)

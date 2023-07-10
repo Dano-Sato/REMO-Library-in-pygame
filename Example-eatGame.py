@@ -69,6 +69,7 @@ class mainScene(Scene):
     def draw(self):
         #draw childs
         Rs.fillScreen(Cs.black)
+        Rs.drawBenchmark() # shows the game fps
         Obj.prey.draw()
         Obj.me.draw()
         self.score.draw()

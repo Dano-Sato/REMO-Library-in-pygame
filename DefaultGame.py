@@ -5,7 +5,7 @@ from REMOLib import *
 
 
 
-#게임 오브젝트들을 선언하는 곳입니다.
+#Global Game Objects 
 class Obj:
     None
 
