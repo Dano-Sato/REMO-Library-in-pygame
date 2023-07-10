@@ -1,0 +1,3 @@
+REMO Library in Pygame is useful wrapper of the pygame.
+It supports scene control, and useful objects in pygame.
+ex) imageObj, spriteObj, textObj, textButton, imageButton ...
